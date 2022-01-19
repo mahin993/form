@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+/* common style or utilities */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background: burlywood;
+    padding: 0 10px;
+}
+.wrapper{
+    max-width: 500px;
+    width: 100%;
+    background: cornsilk;
+    margin: 50px auto;
+    padding: 30px;
+    box-shadow: 1px 1px 2px gray;
+}
+.title{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #fec107;
+    text-transform: uppercase;
+    text-align: center;
+}
+.form{
+    width: 100%;
+}
+.input-field{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.input-field label{
+    width: 200px;
+    color: #757575;
+    margin-right: 10px;
+    font-size: 14px;
+}
+.input-field input, textarea{
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+.input-field textarea{
+    resize: none;
+    height: 100px;
+}
+.gender-select{
+    position: relative;
+    width: 100%;
+    height: 37px;
+}
+.gender-select select{
+    -webkit-appearance: none;
+    border: 1px solid #d5dbd9;
+    width: 100%;
+    height: 100%;
+    padding: 8px 10px;
+    border-radius: 3px;
+    outline: line;
+}
+/* .gender-select select:before{
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    border: 6px solid;
+    border-color: #d5dbd9 transparent transparent transparent;
+} */
+.input-field input:focus,
+.input-field textarea:focus,
+.gender-select select:focus
+{
+    border: 1px solid #fec107;
+}
